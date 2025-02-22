@@ -163,6 +163,9 @@ bindsym $mod+r mode "resize"
 # setups the second monitor
 exec_always --no-startup-id xrandr --output DisplayPort-0 --off --output DisplayPort-1 --mode 2560x1440 --pos 0x0 --rotate normal --output DisplayPort-2 --off --output HDMI-A-0 --off --output HDMI-A-1-1 --mode 1920x1080 --pos 2560x297 --rotate normal --output DVI-D-1-0 --off --output DisplayPort-1-3 --off
 
+# mounts disk
+exec alacritty --command sudo sh $HOME/drive_mount.sh
+
 # sets the default wallpaper
 output * background $HOME/Pictures/wallpaper.jpg fill
 
@@ -236,7 +239,7 @@ bindsym $mod+ctrl+shift+l exec i3lock --color "$base"
 #}
 
 # bar
-exec_always --no-startup-id bash ~/.config/polybar/launch.sh --blocks
+exec --no-startup-id waybar
 
 # gaps
 gaps inner 15px
