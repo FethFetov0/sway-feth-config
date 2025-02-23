@@ -220,8 +220,8 @@ client.urgent            $base     $base $peach $overlay0  $base
 client.placeholder       $base     $base $text  $overlay0  $base
 client.background        $base
 
-# sets a bind for the swaylock and it's color
-bindsym $mod+ctrl+shift+l exec swaylock --color "$base"
+# sets a bind for the swaylock
+bindsym $mod+ctrl+shift+l exec swaylock
 
 #bar {
 #  colors {
