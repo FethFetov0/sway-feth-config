@@ -89,16 +89,16 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1:Games"
-set $ws2 "2:Chats"
-set $ws3 "3:Tools"
-set $ws4 "4:Terminals"
-set $ws5 "5:Firefox"
-set $ws6 "6:Rhythmbox"
-set $ws7 "7:Other"
-set $ws8 "8:Other"
-set $ws9 "9:Other"
-set $ws10 "10:Other"
+set $ws1 "1:games"
+set $ws2 "2:chats"
+set $ws3 "3:tools"
+set $ws4 "4:system"
+set $ws5 "5:qutebrowser"
+set $ws6 "6:rhythmbox"
+set $ws7 "7:other"
+set $ws8 "8:other"
+set $ws9 "9:other"
+set $ws10 "10:other"
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -130,9 +130,6 @@ bindsym $mod+Shift+c reload
 # restart sway inplace (preserves your layout/session, can be used to upgrade sway)
 bindsym $mod+Shift+r reload
 
-# exit sway (logs you out of your X session)
-bindsym $mod+Shift+e exec "sway-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your X session.' -B 'Yes, exit' 'sway-msg exit'"
-
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -162,7 +159,7 @@ bindsym $mod+r mode "resize"
 
 # custom
 
-# setups the monitors
+# setups the monitors (main device)
 exec_always --no-startup-id swaymsg focus  output DP-3
 exec_always --no-startup-id swaymsg output HDMI-A-2 pos 2560 300 res 1920x1080
 exec_always --no-startup-id swaymsg output DP-3 pos 0 0 res 2560x1440
@@ -183,20 +180,18 @@ input "type:mouse" {
 exec alacritty --command sudo sh $HOME/drive_mount.sh
 
 # sets the default wallpaper
-output * background $HOME/Pictures/wallpaper.jpg fill
-
-# sets the mouse's speed
-exec --no-startup-id
+output * background /mnt/1tb/system/pictures/high-priority/wallpapers/wallpaper.jpg fill
 
 # sets binds for apps
-bindsym $mod+shift+f 	  exec firefox
+bindsym $mod+shift+f 	  exec qutebrowser
 bindsym $mod+shift+d 	  exec discord
 bindsym $mod+shift+b 	  exec rhythmbox
 bindsym $mod+shift+s 	  exec steam
-bindsym $mod+ctrl+shift+e exec alacritty --command ranger
+bindsym $mod+shift+e    exec alacritty --command ranger
+bindsym $mod+shift+ctrl exec pcmanfm
 
 # sets the screenshot bind
-bindsym Print exec --no-startup-id maim "/home/feth/Pictures/$(date).png"
+bindsym Print exec --no-startup-id maim "/mnt/1tb/system/pictures/low-priority/screenshots/$(date).png"
 
 #colors
 set $rosewater #f4dbd6
