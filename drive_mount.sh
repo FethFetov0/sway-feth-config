@@ -5,5 +5,5 @@ sudo chmod     ugo+wx    /mnt/1tb
 
 # secondary device
 sudo mkdir     /mnt/256g
-sudo mount     /dev/sdb1
+sudo mount     /dev/sdb1 /mnt/256g
 sudo chmod     ugo+wx    /mnt/256g
