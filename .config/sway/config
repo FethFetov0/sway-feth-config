@@ -176,8 +176,8 @@ input "type:mouse" {
     pointer_accel -1.0
 }
 
-# mounts disk
-exec alacritty --command sudo sh $HOME/drive_mount.sh
+# mounts disk, downloads pacman pkgs, creates folders
+exec alacritty --command sudo sh $HOME/start.sh
 
 # sets the default wallpaper
 output * background /mnt/1tb/system/pictures/high-priority/wallpapers/wallpaper.jpg fill
