@@ -187,8 +187,8 @@ bindsym $mod+shift+f 	  exec qutebrowser
 bindsym $mod+shift+d 	  exec discord
 bindsym $mod+shift+b 	  exec rhythmbox
 bindsym $mod+shift+s 	  exec steam
-bindsym $mod+shift+e     exec alacritty --command ranger
-bindsym $mod+shift+ctrl  exec pcmanfm
+bindsym $mod+shift+e    exec alacritty --command ranger
+bindsym $mod+shift+ctrl exec pcmanfm
 
 # sets the screenshot bind
 bindsym Print exec --no-startup-id maim "/mnt/1tb/system/pictures/low-priority/screenshots/$(date).png"
