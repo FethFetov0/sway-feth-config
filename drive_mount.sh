@@ -1,4 +1,9 @@
-sudo mkdir /run/media/1TB
-sudo mount /dev/sda1 /run/media/1TB
-sudo chmod ugo+wx /run/media/1TB
-# for my main pc
+# main device
+sudo mkdir     /mnt/1tb
+sudo mount     /dev/sda1 /mnt/1tb
+sudo chmod     ugo+wx /mnt/1tb
+
+# secondary device
+sudo mkdir     /mnt/256g
+sudo mount     /dev/sdb1
+sudo chmod     ugo+wx /mnt/256g
