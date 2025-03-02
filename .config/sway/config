@@ -89,16 +89,16 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1:games"
-set $ws2 "2:chats"
-set $ws3 "3:tools"
-set $ws4 "4:system"
-set $ws5 "5:firefox"
-set $ws6 "6:rhythmbox"
-set $ws7 "7:file-managers"
-set $ws8 "8:other"
-set $ws9 "9:other"
-set $ws10 "10:other"
+set $ws1 "1:Games"
+set $ws2 "2:Chats"
+set $ws3 "3:Tools"
+set $ws4 "4:System"
+set $ws5 "5:Firefox"
+set $ws6 "6:Rhythmbox"
+set $ws7 "7:Other"
+set $ws8 "8:Other"
+set $ws9 "9:Other"
+set $ws10 "10:Other"
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -160,7 +160,7 @@ bindsym $mod+r mode "resize"
 # custom
 
 # setups the monitors (main device)
-exec_always --no-startup-id swaymsg focus  output DP-3
+exec        --no-startup-id swaymsg focus  output HDMI-A-2
 exec_always --no-startup-id swaymsg output HDMI-A-2 pos 2560 300 res 1920x1080
 exec_always --no-startup-id swaymsg output DP-3 pos 0 0 res 2560x1440
 
@@ -183,12 +183,13 @@ exec alacritty --command sh $HOME/start.sh
 output * background /mnt/1tb/system/pictures/high-priority/wallpapers/wallpaper.jpg fill
 
 # sets binds for apps
-bindsym $mod+shift+f 	  exec qutebrowser
+bindsym $mod+shift+f 	  exec firefox
 bindsym $mod+shift+d 	  exec discord
 bindsym $mod+shift+b 	  exec rhythmbox
 bindsym $mod+shift+s 	  exec steam
 bindsym $mod+shift+e      exec alacritty --command ranger
 bindsym $mod+shift+ctrl+e exec nemo
+
 # sets the screenshot bind
 bindsym Print exec --no-startup-id maim "/mnt/1tb/system/pictures/low-priority/screenshots/$(date).png"
 
@@ -231,23 +232,32 @@ client.background        $base
 # sets a bind for the swaylock
 bindsym $mod+ctrl+shift+l exec swaylock
 
-#bar {
-#  colors {
-#    background         $base
-#    statusline         $text
-#    focused_statusline $text
-#    focused_separator  $base
-#
-#    # target           border bg        text
-#    focused_workspace  $base  $mauve    $crust
-#    active_workspace   $base  $surface2 $text
-#    inactive_workspace $base  $base     $text
-#    urgent_workspace   $base  $red      $crust
-#  }
-#}
+bar {
+  
+  tray_padding 9
 
-# bar
-exec --no-startup-id waybar
+  position top
+  height   20
+  gaps     0 15
+
+  font pango: cantarell 10
+  icon_theme "oomox-Catpuccin-Mocha"
+
+  status_command while date +'%Y-%m-%d %I:%M:%S %p'; do sleep 1; done
+
+  colors {
+    background         $base
+    statusline         $text
+    focused_statusline $text
+    focused_separator  $base
+
+    # target           border bg        text
+    focused_workspace  $base  $mauve    $crust
+    active_workspace   $base  $surface2 $text
+    inactive_workspace $base  $base     $text
+    urgent_workspace   $base  $red      $crust
+  }
+}
 
 # gaps
 gaps inner 15px
