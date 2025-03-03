@@ -14,9 +14,7 @@ mkdir /mnt/1tb/system/documents/high-priority/projects
 mkdir /mnt/1tb/system/documents/high-priority/projects/game-dev
 mkdir /mnt/1tb/system/documents/high-priority/projects/game-dev/level-design
 mkdir /mnt/1tb/system/documents/high-priority/projects/game-dev/level-design/source
-mkdir /mnt/1tb/system/documents/high-priority/projects/game-dev/level-design/source-files
-mkdir /mnt/1tb/system/documents/high-priority/projects/game-dev/level-design/source-files/source-engine
-mkdir /mnt/1tb/system/documents/high-priority/projects/game-dev/level-design/source-files/source-engine/vmfs
+mkdir /mnt/1tb/system/documents/high-priority/projects/game-dev/level-design/source/vmfs
 mkdir /mnt/1tb/system/documents/high-priority/projects/graphics
 mkdir /mnt/1tb/system/documents/high-priority/projects/graphics/2d
 mkdir /mnt/1tb/system/documents/high-priority/projects/graphics/3d
