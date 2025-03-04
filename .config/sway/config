@@ -185,6 +185,7 @@ output * background /mnt/1tb/system/pictures/high-priority/wallpapers/wallpaper.
 
 # sets binds for apps
 bindsym $mod+shift+f 	  exec firefox
+bindsym $mod+shift+ctrk+f exec alacritty --command wikiman 
 bindsym $mod+shift+d 	  exec discord
 bindsym $mod+shift+b 	  exec rhythmbox
 bindsym $mod+shift+s 	  exec steam
