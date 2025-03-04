@@ -1,0 +1,62 @@
+# lastsync<dd.mm.yyyy> 04.03.2025
+# country outofdate uptodate morerecent total speed stability
+#* 'Russia' 0 14515 1 14516 0.000000 0.000000
+Server=http://web.sketserv.ru/archlinux/$repo/os/$arch
+#* 'Russia' 0 14515 1 14516 0.000000 0.000000
+Server=https://repository.su/archlinux/$repo/os/$arch
+#* 'Russia' 0 14515 1 14516 0.000000 0.000000
+Server=https://web.sketserv.ru/archlinux/$repo/os/$arch
+#* 'Russia' 0 14515 1 14516 0.000000 0.000000
+Server=https://ru.mirrors.cicku.me/archlinux/$repo/os/$arch
+#* 'Russia' 0 14515 1 14516 0.000000 0.000000
+Server=https://mirror.nw-sys.ru/archlinux/$repo/os/$arch
+#* 'Russia' 0 14515 1 14516 0.000000 0.000000
+Server=http://mirror.nw-sys.ru/archlinux/$repo/os/$arch
+#* 'Russia' 0 14516 0 14516 0.000000 0.000000
+Server=https://mirror2.sl-chat.ru/archlinux/$repo/os/$arch
+#* 'Russia' 0 14516 0 14516 0.000000 0.000000
+Server=http://ru.mirrors.cicku.me/archlinux/$repo/os/$arch
+#* 'Russia' 0 14516 0 14516 0.000000 0.000000
+Server=https://mirror3.sl-chat.ru/archlinux/$repo/os/$arch
+#* 'Russia' 13 14503 0 14516 0.000000 0.000000
+Server=https://mirror.yandex.ru/archlinux/$repo/os/$arch
+#* 'Kazakhstan' 13 14503 0 14516 0.000000 0.000000
+Server=http://mirror.ps.kz/archlinux/$repo/os/$arch
+#* 'Russia' 34 14482 0 14516 0.000000 0.000000
+Server=https://mirror.truenetwork.ru/archlinux/$repo/os/$arch
+#* 'Russia' 34 14482 0 14516 0.000000 0.000000
+Server=http://mirror.truenetwork.ru/archlinux/$repo/os/$arch
+#* 'Russia' 34 14482 0 14516 0.000000 0.000000
+Server=http://mirror.kamtv.ru/archlinux/$repo/os/$arch
+#* 'Kazakhstan' 9675 3954 350 13979 0.000000 0.000000
+Server=https://mirror.hoster.kz/archlinux/$repo/os/$arch
+#* 'Russia' 0 0 0 0 0.000000 0.000000
+Server=https://mirror.rol.ru/archlinux/$repo/os/$arch
+#* 'Russia' 0 0 0 265 0.000000 0.000000
+Server=http://repository.su/archlinux/$repo/os/$arch
+#* 'Russia' 0 0 0 0 0.000000 0.000000
+Server=http://mirror.rol.ru/archlinux/$repo/os/$arch
+#* 'Russia' 0 0 0 265 0.000000 0.000000
+Server=http://mirror.yandex.ru/archlinux/$repo/os/$arch
+#* 'Russia' 0 0 0 265 0.000000 0.000000
+Server=http://archlinux.gay/archlinux/$repo/os/$arch
+#* 'Russia' 0 0 0 265 0.000000 0.000000
+Server=https://archlinux.gay/archlinux/$repo/os/$arch
+#* 'Belarus' 0 0 0 265 0.000000 0.000000
+Server=http://ftp.byfly.by/pub/archlinux/$repo/os/$arch
+#* 'Belarus' 0 0 0 265 0.000000 0.000000
+Server=http://mirror.datacenter.by/pub/archlinux/$repo/os/$arch
+#* 'Russia' 0 0 0 265 0.000000 0.000000
+Server=http://mirrors.powernet.com.ru/archlinux/$repo/os/$arch
+#* 'Russia' 0 0 0 265 0.000000 0.000000
+Server=https://mirror.kamtv.ru/archlinux/$repo/os/$arch
+#* 'Kazakhstan' 0 0 0 266 0.000000 0.000000
+Server=http://mirror.hoster.kz/archlinux/$repo/os/$arch
+#* 'Kazakhstan' 0 0 0 265 0.000000 0.000000
+Server=https://mirror.ps.kz/archlinux/$repo/os/$arch
+#* 'Russia' 0 0 0 0 0.000000 0.000000
+Server=http://mirror.kpfu.ru/archlinux/$repo/os/$arch
+#* 'Russia' 0 0 0 0 0.000000 0.000000
+Server=https://mirror.kpfu.ru/archlinux/$repo/os/$arch
+#* 'Russia' 0 0 0 0 0.000000 0.000000
+Server=http://archlinux.zepto.cloud/$repo/os/$arch
