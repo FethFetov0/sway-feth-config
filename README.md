@@ -1,4 +1,6 @@
-put pacman.conf into /etc
+put pacman.conf into /etc/
+
+put paccache.timer into /etc/systemd/system/
 
 run start.sh, but firstly create a folder "shs" and move other shs files to it.
 
