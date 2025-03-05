@@ -184,11 +184,11 @@ exec alacritty --command sh $HOME/start.sh
 output * background /mnt/1tb/system/pictures/high-priority/wallpapers/wallpaper.jpg fill
 
 # sets binds for apps
-bindsym $mod+Shift+f 	      exec firefox
+bindsym $mod+Shift+f 	    exec firefox
 bindsym $mod+Shift+Ctrl+f   exec alacritty --command wikiman 
-bindsym $mod+Shift+d 	      exec discord
-bindsym $mod+Shift+b 	      exec rhythmbox
-bindsym $mod+Shift+s 	      exec steam
+bindsym $mod+Shift+d 	    exec discord
+bindsym $mod+Shift+b 	    exec rhythmbox
+bindsym $mod+Shift+s 	    exec steam
 bindsym $mod+Shift+e        exec alacritty --command ranger
 bindsym $mod+Shift+Ctrl+e   exec nemo
 
@@ -244,7 +244,7 @@ bar {
 
   font pango: cantarell 10
 
-  status_command while printf "%s%% %s\n" "$(cat /sys/class/power_supply/BAT1/capacity)" "$(date +'%Y-%m-%d %l:%M:%S %p')" ; do sleep 1; done
+  status_command while date +'%I:%M:%S%P   | %Y %m %d |'; do sleep 1; done
 
   colors {
     background         $base
