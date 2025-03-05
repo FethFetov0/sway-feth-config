@@ -184,13 +184,13 @@ exec alacritty --command sh $HOME/start.sh
 output * background /mnt/1tb/system/pictures/high-priority/wallpapers/wallpaper.jpg fill
 
 # sets binds for apps
-bindsym $mod+shift+f 	  exec firefox
-bindsym $mod+shift+ctrl+f exec alacritty --command wikiman 
-bindsym $mod+shift+d 	  exec discord
-bindsym $mod+shift+b 	  exec rhythmbox
-bindsym $mod+shift+s 	  exec steam
-bindsym $mod+shift+e      exec alacritty --command ranger
-bindsym $mod+shift+ctrl+e exec nemo
+bindsym $mod+Shift+f 	      exec firefox
+bindsym $mod+Shift+Ctrl+f   exec alacritty --command wikiman 
+bindsym $mod+Shift+d 	      exec discord
+bindsym $mod+Shift+b 	      exec rhythmbox
+bindsym $mod+Shift+s 	      exec steam
+bindsym $mod+Shift+e        exec alacritty --command ranger
+bindsym $mod+Shift+Ctrl+e   exec nemo
 
 # sets the screenshot bind
 bindsym Print exec --no-startup-id maim "/mnt/1tb/system/pictures/low-priority/screenshots/$(date).png"
@@ -232,7 +232,7 @@ client.placeholder       $base     $base $text  $overlay0  $base
 client.background        $base
 
 # sets a bind for the swaylock
-bindsym $mod+ctrl+shift+l exec swaylock
+bindsym $mod+Ctrl+Shift+l exec swaylock
 
 bar {
   
@@ -240,12 +240,11 @@ bar {
 
   position top
   height   20
-  gaps     0 15
+  gaps     5 5
 
   font pango: cantarell 10
-  icon_theme "oomox-Catpuccin-Mocha"
 
-  status_command while date +'%Y-%m-%d %I:%M:%S %p'; do sleep 1; done
+  status_command while printf "%s%% %s\n" "$(cat /sys/class/power_supply/BAT1/capacity)" "$(date +'%Y-%m-%d %l:%M:%S %p')" ; do sleep 1; done
 
   colors {
     background         $base
